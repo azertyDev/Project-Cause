@@ -19,8 +19,11 @@
   },
   "homepage": "https://github.com/azertyDev/Project-Cause#readme",
   "dependencies": {
+    "body-parser": "^1.18.3",
     "eslint": "^5.15.3",
-    "express": "^4.16.4"
+    "express": "^4.16.4",
+    "mongoose": "^5.4.19",
+    "morgan": "^1.9.1"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
