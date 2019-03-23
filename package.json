@@ -1,0 +1,23 @@
+{
+  "name": "Project-Cause",
+  "version": "1.0.0",
+  "description": "This open source project is creating a platform for anyone to support a cause they care about.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/azertyDev/Project-Cause.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/azertyDev/Project-Cause/issues"
+  },
+  "homepage": "https://github.com/azertyDev/Project-Cause#readme",
+  "dependencies": {
+    "express": "^4.16.4"
+  }
+}
