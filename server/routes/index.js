@@ -1,5 +1,5 @@
 // home route
-const homeRoute = (req,res) => {
+const homeRoute = (app) => {
     app.get('', (req, res) => {
         res.redirect('/api/');
     });
