@@ -3,6 +3,7 @@ import express from 'express';
 import bodyParser from 'body-parser';
 import mongoose from 'mongoose';
 import logger from 'morgan';
+import dotenv from 'dotenv';
 import mainRoutes from './server/routes/main';
 
 
@@ -11,12 +12,13 @@ const app = express();
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(logger('dev'));
+require('dotenv').config();
 
 // set up route
 app.use('/api/', mainRoutes);
 
 // set up mongoose
-mongoose.connect('mongodb://localhost/projectcause', { useNewUrlParser: true })
+mongoose.connect(process.env.MONGODB, { useNewUrlParser: true })
   .then(()=> {
     console.log('Database connected');
   })
